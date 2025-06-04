@@ -4,26 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boba Paw</title>
-    <link rel="stylesheet.css" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 <header>
     <nav class="navbar">
         <ul>
-        <!-- Refresh button -->
-            <li>
+            <!-- Refresh button -->
+            <li class="logo">
             <a href="#" onclick="location.reload();">
             <img src="https://img.icons8.com/ios/452/refresh.png" alt="Refresh" width="40" height="40" />
-            </a>
+        </a>
             </li>
             <!-- Navigation links -->
-            <li><a class="index-link" href=""><span style="color: rgb(0, 0, 0);"></span></a></li>
-            <li><a class="" href=""><span style="color: rgb(0, 0, 0);"></span></a></li>
-            <li> href=""><span style="color: rgb(0, 0, 0);"></span></a></li>
+            <li><a class="homelink" href="index.html">Home</a></li>
+            <li><a class="contactlink" href="contact.html">Contact</a></li>
+            <li><a class="shoplink" href="shop.html">Shop</a></li>
+            <li><a class="login" href="login.html">Login</a></li>
         </ul>
     </nav>
 </header>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1578682806517-0de6c7a5d812");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white; /* So text is readable */
+}
+
+.navbar {
+    background: none; /* No background color */
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid #003836;
+}
+</style>
 </head>
 <body>
     <h1>Boba Paw</h1>
+
 
 
 
