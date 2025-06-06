@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: slideUp 1s ease;
+}
+
+.footer a {
+    color: #00ffff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.footer a:hover {
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+@keyframes slideUp {
+from {
+    transform: translateY(50px);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <footer class="footer">
+<div class="footer-content">
+    <h2>Boba Paw</h2>
+    <p>Serving happiness in every sip 🍹</p>
+    <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+    </div>
+</div>
+<p class="copyright">© 2025 Boba Paw. All rights reserved.</p>
+</footer>
+</body>
+</html>
