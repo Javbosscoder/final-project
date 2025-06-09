@@ -1,24 +1,6 @@
-.navbar {
-    background: none; /* No background color */
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: black; 
-    font-weight: bold;
 }
 
 h1 {
@@ -198,7 +180,7 @@ li {
 .product img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .name {
