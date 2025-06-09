@@ -34,6 +34,9 @@ body {
     overflow-x: hidden;
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
 }
 
 p {
@@ -174,16 +177,11 @@ li {
     animation: slideUp 1s ease;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 20px;
-}
+
 
 .progrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1.5fr);
     gap: 25px;
     max-width: 1000px;
     margin: auto;
@@ -194,7 +192,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .product img {
