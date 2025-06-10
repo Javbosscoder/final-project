@@ -159,8 +159,6 @@ li {
     animation: slideUp 1s ease;
 }
 
-
-
 .progrid {
     display: grid;
     grid-template-columns: repeat(3, 1.5fr);
