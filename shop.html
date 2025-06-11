@@ -26,6 +26,22 @@
         text-decoration: none;
         color: black;
     }
+    .drink {
+    animation-timeline: view();
+    animation-range: entry -40% contain 35%;
+    }
+
+    @keyframes drink {
+        from {
+        opacity: 0;
+        transform: translateY(150px) scale(0.8); /* moves up and zooms in */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1); /*final position and size */
+    }
+    }
+
     </style>
 </head>
 <body>
@@ -162,6 +178,7 @@
 
 
     <footer class="footer">
+        <a href="https://www.instagram.com/bobapawteahouse/?hl=en"></a>
         <p class="copyright">&copy; 2025 Boba Paw All rights reserved!</p>
     </footer>
 </body>
