@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Work</title>
+    <style>
+        h1 {
+            font-weight: bold;
+            font-size: 60px;
+        }
+    
+    Button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em, 2em;
+    border: 3px solid #ff0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16), 0, 3px, 6px rgba(0, 0, 0,0.1 );
+    color: #ff0072;
+    text-decoration: none;
+    transition: 3s ease all;
+    z-index: 1;
+}
+
+    button:hover {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: #ff0072;
+        z-index: -1;
+    }
+    button:hover button:focus {
+        color: white;
+    }
+    button:hover::before button:focus::before {
+        transition: 0.5s ease all;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+    button:active {
+        transform: scale(0.9);
+    }
+    </style>
 </head>
 <body>
     <h1>Under development</h1>
 
+    <button onclick="window.location.href='index.html'"></button>Sign-out</button>
 
 
     <iframe src="https://www.google.com/maps/embed?pb=!4v1749582342091!6m8!1m7!1s8JiSBkafl6KyUIDCjBbN8w!2m2!1d49.88364420460594!2d-97.20436462839955!3f6.877070435182816!4f-0.1343324685823859!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
