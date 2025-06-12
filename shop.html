@@ -1,176 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boba paw Shop</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-    .sigma {
-        width: 330px;
-        height: 200px;
-        box-shadow: rgba(0, 0, 0, 0.5);
-    }
-    .videoya {
-        width: 100%;
-        height: 25%;
-        object-fit: cover;
-        border-top: 4px solid black;
-        border-bottom: 4px solid black
-    }
-    h1 {
-        font-size: 64px;
-    }
     
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .drink {
-        animation-timeline: view();
-        animation-range: entry -40% contain 35%;
-    }
+    <!-- Page title -->
+    <title>Boba paw Shop</title>
 
-    @keyframes drink {
-        from {
-        opacity: 0;
-        transform: translateY(150px) scale(0.8); /* moves up and zooms in */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1); /*final position and size */
-    }
-    }
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Internal CSS styling -->
+    <style>
+        /* Style for drink images */
+        .sigma {
+            width: 330px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style for the video element */
+        .videoya {
+            width: 100%;
+            height: 25%;
+            object-fit: cover;
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+        }
+
+        /* Style for main headings */
+        h1 {
+            font-size: 64px;
+        }
+
+        /* Remove underline and set color for links */
+        a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
+    <!-- Header and navigation bar -->
     <header>
-    <nav class="navbar">
-        <ul>
-            <!-- Refresh button -->
-            <li class="logo">
-            <a href="#" onclick="location.reload();">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_CXGjWATYfI1clKYcjtsk0a3a9MzC2OgUQ&s" alt="Refresh" width="40" height="40" />
+        <nav class="navbar">
+            <ul>
+                <!-- Refresh button with image -->
+                <li class="logo">
+                    <a href="#" onclick="location.reload();">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_CXGjWATYfI1clKYcjtsk0a3a9MzC2OgUQ&s" alt="Refresh" width="40" height="40" />
+                    </a>
+                </li>
+
+                <!-- Navigation links -->
+                <li class="links"><a class="homelink" href="index.html">Home</a></li>
+                <li class="links"><a class="contactlink" href="contact.html">Contact</a></li>
+                <li class="links"><a class="shoplink" href="shop.html">Shop</a></li>
+            </ul>
+
+            <!-- Right side of navbar with image and sign-out button -->
+            <div class="side-nav">
+                <img src="images/468ca326-0f74-4d10-895b-c98a92fe31ff.png" alt="">
+                <button class="sign-out-button" onclick="window.location.href='login.html'">Sign-out</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main heading -->
+    <h1>Popular Flavors</h1>
+
+    <!-- Line breaks for spacing -->
+    <br />
+    <br />
+
+    <!-- First product grid row -->
+    <div class="progrid">
+        <!-- Individual drink card -->
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/d4a3f8e3-e48b-402e-9cd1-7712d0e135f3-retina-large.avif" alt="Drink 1">
+                <p class="name">TA-HO Milk Tea</p>
+                <p class="price">$8.99</p>
             </a>
-            </li>
-            <!-- Navigation links -->
-            <li class="links"><a class="homelink" href="index.html">Home</a></li>
-            <li class="links"><a class="contactlink" href="contact.html">Contact</a></li>
-            <li class="links"><a class="shoplink" href="shop.html">Shop</a></li>
-            <li class="links"><a class="login" href="login.html">Login</a></li>
-        </ul>
-
-        <div class="side-nav">
-            <img src="images/468ca326-0f74-4d10-895b-c98a92fe31ff.png" alt="">
-            <button class="sign-out-button" onclick="window.location.href='login.html'">Sign-out</button>
         </div>
-    </nav>
-</header>
-<h1>Popular Flavors</h1>
-<br />
-<br />
-<div class="progrid">
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/d4a3f8e3-e48b-402e-9cd1-7712d0e135f3-retina-large.avif" alt="Drink 1">
-            <p class="name">TA-HO Milk Tea</p>
-            <p class="price">$8.99</p>
-        </a>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/51c28def-06cb-486f-927d-cc2aa383fbe7-retina-large.avif" alt="Drink 2">
+                <p class="name">Crazy Oreo Cheesecake</p>
+                <p class="price">$9.89</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/247b3ad0-d69b-46df-99fd-77348b9ae7e3-retina-large-jpeg.avif" alt="Drink 3">
+                <p class="name">Taro Slush</p>
+                <p class="price">$8.99</p>
+            </a>
+        </div>
     </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/51c28def-06cb-486f-927d-cc2aa383fbe7-retina-large.avif" alt="Drink 2">
-            <p class="name">Crazy Oreo Cheesecake</p>
-            <p class="price">$9.89</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/247b3ad0-d69b-46df-99fd-77348b9ae7e3-retina-large-jpeg.avif" alt="Drink 3">
-            <p class="name">Taro Slush</p>
-            <p class="price">$8.99</p>
-        </a>
-    </div>
-</div>
 
-<br />
-<br />
-<br />
-<video class="videoya" autoplay muted loop playsinline>
-    <source src="images/istockphoto-1336006603-640_adpp_is.mp4" type="video/mp4">
+    <!-- Video section between product grids -->
+    <br />
+    <br />
+    <br />
+    <video class="videoya" autoplay muted loop playsinline>
+        <source src="images/istockphoto-1336006603-640_adpp_is.mp4" type="video/mp4">
     </video>
-<br />
-<br />
-<br />
-<div class="progrid">
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/f0891a72-b602-42cc-80cd-6593dd3d81b0-retina-large.avif" alt="Drink 1">
-            <p class="name">White Rabbit Candy Slush with Boba</p>
-            <p class="price">$9.94</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/06f4547e-9eed-45e8-b100-62a1277a98f7-retina-large.avif" alt="Drink 2">
-            <p class="name">2 Pieces Chicken with 1 Side</p>
-            <p class="price">$17.89</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/434816d8-d8b4-4ea9-b013-b7ea04e3f10b-retina-large.avif" alt="Drink 3">
-            <p class="name">Strawberry Mango Matcha</p>
-            <p class="price">$9.67</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/d15299fd-e573-4b1a-bb0c-6eab4a773f01-retina-large.avif" alt="Drink 4">
-            <p class="name">Avocado Smoothie</p>
-            <p class="price">$8.99</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/0b4c997c-655d-4da7-b87c-78e2f2ebc03b-retina-large.avif" alt="Drink 5">
-            <p class="name">4 Pieces Chicken with 1 Side </p>
-            <p class="price">$24.89</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/49df583a-d842-49c3-b5c2-5fd4456152f2-retina-large.avif" alt="Drink 6">
-            <p class="name">Strawberry Milk Slush</p>
-            <p class="price">$8.99</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/5421d33e-9e75-4426-b0dc-bf3b5c42e329-retina-large.avif" alt="Drink 7">
-            <p class="name">Taiyaki</p>
-            <p class="price">$13.99</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/7625c618-b1e2-45e5-b301-5ad3a25dc592-retina-large.avif" alt="Drink 8">
-            <p class="name">6 Pieces Chicken Bucket</p>
-            <p class="price">$34.89</p>
-        </a>
-    </div>
-    <div class="drink">
-        <a href="NoMoreTim.html">
-            <img class="sigma" src="images/26263468-3305-4619-a8e5-21424d9882b4-retina-large.avif" alt="Drink 9">
-            <p class="name">Fresh Pineapple Lemonade</p>
-            <p class="price">$8.99</p>
-        </a>
-    </div>
-</div>
+    <br />
+    <br />
+    <br />
 
+    <!-- Second product grid with more items -->
+    <div class="progrid">
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/f0891a72-b602-42cc-80cd-6593dd3d81b0-retina-large.avif" alt="Drink 1">
+                <p class="name">White Rabbit Candy Slush with Boba</p>
+                <p class="price">$9.94</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/06f4547e-9eed-45e8-b100-62a1277a98f7-retina-large.avif" alt="Drink 2">
+                <p class="name">2 Pieces Chicken with 1 Side</p>
+                <p class="price">$17.89</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/434816d8-d8b4-4ea9-b013-b7ea04e3f10b-retina-large.avif" alt="Drink 3">
+                <p class="name">Strawberry Mango Matcha</p>
+                <p class="price">$9.67</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/d15299fd-e573-4b1a-bb0c-6eab4a773f01-retina-large.avif" alt="Drink 4">
+                <p class="name">Avocado Smoothie</p>
+                <p class="price">$8.99</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/0b4c997c-655d-4da7-b87c-78e2f2ebc03b-retina-large.avif" alt="Drink 5">
+                <p class="name">4 Pieces Chicken with 1 Side</p>
+                <p class="price">$24.89</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/49df583a-d842-49c3-b5c2-5fd4456152f2-retina-large.avif" alt="Drink 6">
+                <p class="name">Strawberry Milk Slush</p>
+                <p class="price">$8.99</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/5421d33e-9e75-4426-b0dc-bf3b5c42e329-retina-large.avif" alt="Drink 7">
+                <p class="name">Taiyaki</p>
+                <p class="price">$13.99</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/7625c618-b1e2-45e5-b301-5ad3a25dc592-retina-large.avif" alt="Drink 8">
+                <p class="name">6 Pieces Chicken Bucket</p>
+                <p class="price">$34.89</p>
+            </a>
+        </div>
+        <div class="drink">
+            <a href="NoMoreTim.html">
+                <img class="sigma" src="images/26263468-3305-4619-a8e5-21424d9882b4-retina-large.avif" alt="Drink 9">
+                <p class="name">Fresh Pineapple Lemonade</p>
+                <p class="price">$8.99</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer section -->
     <footer class="footer">
-        <a href="https://www.instagram.com/bobapawteahouse/?hl=en"></a>
+        <a href="https://www.instagram.com/bobapawteahouse/?hl=en" target="_blank" rel="noopener noreferrer">
+    <img src="images/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Boba Paw Logo" width="80" />
+    </a>
+        <!-- Link to Instagram  -->
+        <!-- Copyright notice -->
         <p class="copyright">&copy; 2025 Boba Paw All rights reserved!</p>
     </footer>
 </body>

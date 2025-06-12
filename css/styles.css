@@ -1,47 +1,56 @@
+/* Make html take full height and remove default margin */
 html {
     height: 100%;
     margin: 0;
 }
 
+/* Style for main headings */
 h1 {
     margin-top: 70px;
     text-align: center;
 }
 
+/* Style for the header element */
 header {
     border-bottom: 2px solid #003836;
 }
 
+/* Base styles for body */
 body {
-    overflow-x: hidden;
-    font-size: 62.5%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-size: 62.5%; /* Sets base font size to 10px (62.5% of 16px) */
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 20px;
 }
 
+/* Paragraph text size */
 p {
     font-size: 1.6rem;
 }
 
+/* List item text size */
 li {
     font-size: 1rem;
 }
 
-.side-nav img{
-    object-fit: cover;
+/* Styling for images inside side navigation */
+.side-nav img {
+    object-fit: cover; /* Ensures image covers the container */
     width: 75px;
-    border-radius: 100px;
+    border-radius: 100px; /* Makes the image fully round */
     margin-right: 35px;
 }
 
+/* Container for side navigation */
 .side-nav {
     display: flex;
     justify-content: right;
     margin-left: 750px;
 }
 
+/* Sign out button styles */
 .sign-out-button {
     color: white;
     background-color: black;
@@ -50,6 +59,7 @@ li {
     font-size: 1rem;
 }
 
+/* Navbar container styles */
 .navbar {
     background: none; /* No background color */
     padding: 0px; 
@@ -57,41 +67,49 @@ li {
     display: flex;
 }
 
+/* Styles for unordered list inside navbar */
 .navbar ul {
-    list-style: none;
+    list-style: none; /* Remove default bullet points */
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Space between list items */
     margin: 0;
     padding: 0;
 }
 
+/* Links inside navbar list items */
 .navbar li a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     color: black; 
     font-weight: bold;
 }
+
+/* Logo styles with smooth transform */
 .logo {
     transition: transform 0.3s ease;
 }
 
+/* Logo grows slightly on hover */
 .logo:hover {
-    transform: scale(1.5); /* Makes it 10% bigger */
+    transform: scale(1.5); /* Scales logo 1.5 times */
 }
 
+/* Heading styles */
 h1 {
     color: black;
     margin-top: 70px;
     text-align: center;
 }
 
+/* Header background and bottom border */
 header {
     background-color: white;
     border-bottom: 7px solid #003836;
     padding: 10px 0;
 }
 
+/* General button styles */
 .btn {
     font-size: 2rem;
     font-weight: 700;
@@ -101,18 +119,20 @@ header {
     border: 10px solid black;
     border-radius: 5px;
 
+    /* Smooth transform transition */
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
-
 }
 
+/* Button hover effect - moves button up */
 .btn:hover {
     transform: translateY(-10px);
 }
 
-.links{
+/* Styling links inside list items */
+.links {
     padding: 10px;
     border-radius: 20px;
     background-color: #d9d9d9;
@@ -122,6 +142,7 @@ header {
     justify-content: center;
 }
 
+/* Buy now button styles */
 .buy-now {
     position: relative;   
     background-color: #d8ab68;
@@ -134,66 +155,75 @@ header {
     left: 80px;
 }
 
+/* Button hover brightness effect */
 button:hover {
     filter: brightness(70%);
 }
 
+/* Smooth transition on buttons */
 button {
     transition: 0.4s ease;
 }
 
-
+/* Hover brightness effect for list items */
 li:hover {
     filter: brightness(70%);
 }
 
+/* Smooth transition for list items */
 li {
     transition: 0.4s ease;
 }
 
+/* Footer styles */
 .footer {
-    background-color: #222;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px;
     animation: slideUp 1s ease;
 }
 
+/* Grid container for product listings */
 .progrid {
     display: grid;
-    grid-template-columns: repeat(3, 1.5fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, 1.5fr); /* 3 columns with equal fractional widths */
+    gap: 25px; /* Space between grid items */
     max-width: 1000px;
-    margin: auto;
+    margin: auto; /* Center horizontally */
 }
 
+/* Individual drink/product cards */
 .drink {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease;
     overflow: hidden;
 }
 
+/* Scale effect on hover for drink cards */
 .drink:hover {
     transform: scale(1.05);
 }
 
+/* Images inside product container */
 .product img {
     width: 100%;
     height: auto;
     border-radius: 12px;
 }
 
+/* Product name styling */
 .name {
     font-weight: bold;
     margin: 10px 0 5px;
 }
 
+/* Product price styling */
 .price {
     color: #555;
     font-size: 14px;
 }
-

@@ -4,185 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <!-- External CSS file -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
-}
+    /* Reset default browser styles and apply base font */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Quicksand', sans-serif;
+    }
 
-body{
-	height: 100vh;
-	width: 100%;
-}
+    /* Full viewport height and width */
+    body {
+        height: 100vh;
+        width: 100%;
+    }
 
-.container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 100px;
-}
+    /* Container for the contact form */
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 100px;
+    }
 
-.container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: url("images/GreatLakes-BobaTeas-2.jpg") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
+    /* Blurred background image */
+    .container:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("images/GreatLakes-BobaTeas-2.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
 
-.contact-box{
-	max-width: 850px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-}
+    /* Contact box with two-column layout */
+    .contact-box {
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    }
 
-.left{
-	background: url("images/1686684207354.jpg") no-repeat center;
-	background-size: cover;
-	height: 100%;
-}
+    /* Left side with image */
+    .left {
+        background: url("images/1686684207354.jpg") no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
 
-.right{
-	padding: 25px 40px;
-}
+    /* Right side with form content */
+    .right {
+        padding: 25px 40px;
+    }
 
-h2{
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-}
+    /* Heading styling */
+    h2 {
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    }
 
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: black;
-}
+    /* Decorative underline for heading */
+    h2:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: black;
+    }
 
-.field{
-	width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
-}
+    /* Input and textarea fields */
+    .field {
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        outline: none;
+        background-color: rgba(230, 230, 230, 0.6);
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
 
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
-}
+    /* Hover effect for input fields */
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 
-textarea{
-	min-height: 150px;
-}
+    /* Minimum height for message box */
+    textarea {
+        min-height: 150px;
+    }
 
-.btn{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #ff9500;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
+    /* Submit button styling */
+    .btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #ff9500;
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .3s;
+    }
 
-.btn:hover{
-    background-color: orange;
-}
+    /* Hover effect for button */
+    .btn:hover {
+        background-color: orange;
+    }
 
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
-}
+    /* Focus effect for input fields */
+    .field:focus {
+        border: 2px solid rgba(30,85,250,0.47);
+        background-color: #fff;
+    }
 
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
-}
-/*  */
+    /* Responsive: stack layout on smaller screens */
+    @media screen and (max-width: 880px) {
+        .contact-box {
+            grid-template-columns: 1fr;
+        }
+
+        .left {
+            height: 200px;
+        }
+    }
     </style>
 </head>
 <body>
     <header>
-    <nav class="navbar">
-        <ul>
-            <!-- Refresh button -->
-            <li class="logo">
-            <a href="#" onclick="location.reload();">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_CXGjWATYfI1clKYcjtsk0a3a9MzC2OgUQ&s" alt="Refresh" width="40" height="40" />
-            </a>
-            </li>
-            <!-- Navigation links -->
-            <li class="links"><a class="homelink" href="index.html">Home</a></li>
-            <li class="links"><a class="contactlink" href="contact.html">Contact</a></li>
-            <li class="links"><a class="shoplink" href="shop.html">Shop</a></li>
-            <li class="links"><a class="login" href="login.html">Login</a></li>
-        </ul>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <ul>
+                <!-- Logo with refresh on click -->
+                <li class="logo">
+                    <a href="#" onclick="location.reload();">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_CXGjWATYfI1clKYcjtsk0a3a9MzC2OgUQ&s" alt="Refresh" width="40" height="40" />
+                    </a>
+                </li>
+                <!-- Page links -->
+                <li class="links"><a class="homelink" href="index.html">Home</a></li>
+                <li class="links"><a class="contactlink" href="contact.html">Contact</a></li>
+                <li class="links"><a class="shoplink" href="shop.html">Shop</a></li>
+            </ul>
 
-        <div class="side-nav">
-            <img src="images/468ca326-0f74-4d10-895b-c98a92fe31ff.png" alt="">
-            <button class="sign-out-button" onclick="window.location.href='login.html'">Sign-out</button>
+            <!-- Side nav with sign out -->
+            <div class="side-nav">
+                <img src="images/468ca326-0f74-4d10-895b-c98a92fe31ff.png" alt="">
+                <button class="sign-out-button" onclick="window.location.href='login.html'">Sign-out</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact form section -->
+        <!-- Based on tutorial: https://www.youtube.com/watch?v=Db5jCkrVgAw -->
+        <div class="container">
+            <div class="contact-box">
+                <!-- Left side with background image -->
+                <div class="left"></div>
+                <!-- Right side with form -->
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <form action="index.html" onsubmit="return ContactForm()">
+                        <input type="text" class="field" placeholder="Your Name" required>
+                        <input type="text" class="field" placeholder="Last Name" required>
+                        <input type="text" class="field" placeholder="Your Email" required>
+                        <textarea placeholder="Message" class="field" required></textarea>
+                        <button class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
-<main>
-    <!-- https://www.youtube.com/watch?v=Db5jCkrVgAw yt video i used for Contact form -->
-<div class="container">
-		<div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>Contact Us</h2>
-                <form action="index.html" onsubmit="return ContactForm()">
-				<input type="text" class="field" placeholder="Your Name" required>
-				<input type="text" class="field" placeholder="Last Name" required>
-				<input type="text" class="field" placeholder="Your Email" required>
-				<textarea placeholder="Message" class="field" required></textarea>
-				<button class="btn">Send</button>
-                </form>
-			</div>
-		</div>
-	</div>
-</main>
+    </main>
 
-<script>
+    <script>
+    // Shows a confirmation alert when form is submitted
     function ContactForm() {
-            //HTML required already does the job,
-            // this just shows a pop-up after submit
-            alert("Message sent successfully!");
-            return true; // allows form to continue to index.html
-        }
+        alert("Message sent successfully!");
+        return true; // continue to index.html
+    }
     </script>
 
+    <!-- Footer section -->
     <footer class="footer">
+		<a href="https://www.instagram.com/bobapawteahouse/?hl=en" target="_blank" rel="noopener noreferrer">
+    <img src="images/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Boba Paw Logo" width="80" />
+    </a>
         <p class="copyright">&copy; 2025 Boba Paw All rights reserved!</p>
     </footer>
 </body>
