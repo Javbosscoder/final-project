@@ -5,6 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+    main {
+        margin-top: 115px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 400px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .field {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-bottom: 20px;
+        background-color: rgba(230, 230, 230, 0.6);
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        background-color: #ff9500;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        background-color: orange;
+    }
+    
+    .links {
+        margin-top: 15px;
+        text-align: right 100px;
+        font-size: 0.9rem;
+    }
+
+    .links a {
+        color: #000000;
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -30,21 +112,34 @@
     </nav>
 </header>
 <main>
-<div class="container">
-		<div class="contact-box">
-			<div class="left"></div>
-			<div class="right">
-				<h2>Contact Us</h2>
-                <form action="index.html" onsubmit="return ContactForm()">
-				<input type="text" class="field" placeholder="Email or username" required>
-				<input type="text" class="field" placeholder="Password" required>
-				<textarea placeholder="Message" class="field" required></textarea>
-				<button class="btn">Send</button>
-                </form>
-			</div>
-		</div>
-	</div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="index.html" onsubmit="return ContactForm()">
+            <input type="text" class="field" placeholder="Email or Username" required>
+            <input type="password" class="field" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    <div class="links">
+        <a href="NoMoreTim.html">Forgot password?</a> | 
+        <a href="NoMoreTim.html">Sign up</a>
+    </div>
+    </div>
 </main>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+
     <footer class="footer">
         <p class="copyright">&copy; 2025 Boba Paw All rights reserved!</p>
     </footer>

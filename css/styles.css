@@ -52,7 +52,7 @@ li {
 
 .navbar {
     background: none; /* No background color */
-    padding: 0px;
+    padding: 0px; 
     margin: 0px;
     display: flex;
 }
