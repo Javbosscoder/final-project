@@ -155,28 +155,27 @@
             <ul>
                 <!-- Logo with refresh on click -->
                 <li class="logo">
-                    <a href="#" onclick="location.reload();">
+                    <a href="#" onclick="location.reload();" tabindex="1">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_CXGjWATYfI1clKYcjtsk0a3a9MzC2OgUQ&s" alt="Refresh" width="40" height="40" />
                     </a>
                 </li>
                 <!-- Page links -->
-                <li class="links"><a class="homelink" href="index.html">Home</a></li>
-                <li class="links"><a class="contactlink" href="contact.html">Contact</a></li>
-                <li class="links"><a class="shoplink" href="shop.html">Shop</a></li>
+                <li class="links"><a class="homelink" href="index.html" tabindex="2">Home</a></li>
+                <li class="links"><a class="contactlink" href="contact.html" tabindex="3">Contact</a></li>
+                <li class="links"><a class="shoplink" href="shop.html" tabindex="4">Shop</a></li>
             </ul>
 
             <!-- Side nav with sign out -->
             <div class="side-nav">
                 <img src="images/468ca326-0f74-4d10-895b-c98a92fe31ff.png" alt="">
-                <button class="sign-out-button" onclick="window.location.href='login.html'">Sign-out</button>
+                <button class="sign-out-button" onclick="window.location.href='login.html'" tabindex="5">Sign-out</button>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Contact form section -->
-        <!-- Based on tutorial: https://www.youtube.com/watch?v=Db5jCkrVgAw -->
-        <div class="container">
+        <section class="container">
             <div class="contact-box">
                 <!-- Left side with background image -->
                 <div class="left"></div>
@@ -184,15 +183,15 @@
                 <div class="right">
                     <h2>Contact Us</h2>
                     <form action="index.html" onsubmit="return ContactForm()">
-                        <input type="text" class="field" placeholder="Your Name" required>
-                        <input type="text" class="field" placeholder="Last Name" required>
-                        <input type="text" class="field" placeholder="Your Email" required>
-                        <textarea placeholder="Message" class="field" required></textarea>
-                        <button class="btn">Send</button>
+                        <input type="text" class="field" placeholder="Your Name" required tabindex="6">
+                        <input type="text" class="field" placeholder="Last Name" required tabindex="7">
+                        <input type="text" class="field" placeholder="Your Email" required tabindex="8">
+                        <textarea placeholder="Message" class="field" required tabindex="9"></textarea>
+                        <button class="btn" tabindex="10">Send</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <script>
@@ -205,9 +204,9 @@
 
     <!-- Footer section -->
     <footer class="footer">
-		<a href="https://www.instagram.com/bobapawteahouse/?hl=en" target="_blank" rel="noopener noreferrer">
-    <img src="images/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Boba Paw Logo" width="80" />
-    </a>
+        <a href="https://www.instagram.com/bobapawteahouse/?hl=en" target="_blank" rel="noopener noreferrer" tabindex="11">
+            <img src="images/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Boba Paw Logo" width="80" />
+        </a>
         <p class="copyright">&copy; 2025 Boba Paw All rights reserved!</p>
     </footer>
 </body>
